@@ -1,63 +1,135 @@
 <!DOCTYPE html>
-<html lang="en" style="background:#F3E2D4">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DevMaurie</title>
         <style>
+        /* Website background*/ 
+        html{
+        background-image: url(https://wallpapercave.com/wp/wp6660395.png);
+        background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-size: 100% 100%;
+        }
+        
+        /* Website font*/
         body{
         font-family: "Quicksand", sans-serif;
         font-optical-sizing: auto;
         font-weight: <weight>;
         font-style: normal;
         }
-        
-        .bitcount-prop-single-ink-pageheader {
-        font-family: "Bitcount Prop Single Ink", system-ui;
-        font-optical-sizing: auto;
-        font-weight: 900;
+            
+        /*DevMaurie header*/
+        .libertinus-keyboard-regular {
+        font-family: "Libertinus Keyboard";
+        font-weight: 400;
         font-style: normal;
-        font-variation-settings:
-            "slnt" 0,
-            "CRSV" 0.5,
-            "ELSH" 0,
-            "ELXP" 0,
-            "SZP1" 0,
-            "SZP2" 0,
-            "XPN1" 0,
-            "XPN2" 0,
-            "YPN1" 0,
-            "YPN2" 0;
-        font-size: xx-large;
-        background-color: #DDC3C3;
+        font-size:70px;
+        color:#4d0641;
+        border:2px #8D5F8C;
+        background-color:rgb(221, 195, 195, 0.5);
+        border-radius: 5px;
         }
 
-        #p-description{
-            background-color:#DDC3C3;
-        }
-        img{
-        height:10px;
-        width:10px;
-        }
-
-        h3{
-            color:#8D5F8C;
-        }
-
-        h4{
-            color:#8D5F8C;
-        }
-        
         hr {
         height: 2px; /* Set the desired thickness */
         background-color: #6B3F69; /* Set the desired color */
         border: none; /* Remove the default border */
         }
 
+         /*Profile links*/
+        .Links {
+            text-align: center;
+            border: 2px solid #8D5F8C;
+            background-color:rgb(107, 63, 105);
+            }
+        /*anchor tags*/
+        a  {
+            color:white;
+        }
+
+        /*Profile background
+        .background{
+            border:2px solid rgb(141, 95, 140);
+            background-color: rgba(192, 145, 191, 0.7);
+            border-radius: 10px;
+            margin-top:10px;
+            color: white;
+            text-indent: 50px;
+            width: 35%;
+            display: inline-block;
+            float:left;
+        }*/
+
+        /*Portfolio word*/
+        h3{
+            color:#522051;
+        }
+
+        /*Portfolio list
+        .portfolio-list{
+            display: inline-block;
+            border:2px solid rgb(141, 95, 140);
+            background-color: rgba(192, 145, 191, 0.7);
+            border-radius: 10px;
+            margin-top:10px;
+            margin-left: 10px;
+            color: white;
+            width:60%;
+            
+        }*/
+        
+
+        /*Project image links*/
+        img{
+        height:10px;
+        width:10px;
+        }     
+
+        /*Copyright*/
+        footer{
+            text-align: center;
+            color: rgb(182, 155, 181);
+            float:none;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        /*using flexbox for layout*/
+        .flexcontainer{
+            display:flex;
+            gap:10px;      
+        }
+
+        .background{
+            border:2px solid rgb(141, 95, 140);
+            background-color: rgba(192, 145, 191, 0.7);
+            border-radius: 10px;
+            margin-top:10px;
+            margin-left: 10px;
+            color: white;
+            width:40%;
+            text-indent: 50px;
+        }
+
+        .portfolio-list{
+            border:2px solid rgb(141, 95, 140);
+            background-color: rgba(192, 145, 191, 0.7);
+            border-radius: 10px;
+            margin-top:10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            color: white;
+            width:60%
+        }
+
         </style>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Libertinus+Keyboard&display=swap" rel="stylesheet">
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,37 +137,44 @@
     </head>
 
     <body>
-        <h1 class="bitcount-prop-single-ink-pageheader">DevMaurie</h1>
-        <p>
-            Hi I am DevMaurie. I am a Petroleum Engineer with a huge interest in web development.<br/>
-            I've been on a self study journey for about two months now and has been really enjoying creating stuff.<br/>
-            My languages are English, Filipino, Python, a little bit of Japanese and HTML/CSS/JS.
-        </p>
-        <hr />
-        <h3>PORTFOLIO</h3>
-            <p  id="p-description"> I first started exploring html when I was 13 when I got hooked on tumblr.
-                I liked how I was able to customize my site, sort of like a personal blog with lots of weird backgrounds.
-                I've always been curios about making one however life slapped me hard and threw me into engineering College **just kidding**.
-
-                <br/>Please note that personal info in this page is not real and for practice purposes only</p>
-            </p>
-
-            <p  id="p-description">Anyways, now I am back to the tech world and I took a Udemy course for full stack web development.
-                I am starting small but every legendary person in the world started small too. Below is my list of projects starting from the very basics to the most advance ones. 
-           </p>
-        
-         <h4>Projects:</h4> 
-         <ul>
-            <li>Games that I like - demonstrates the basic structure of HTML</li>
-             <a href="./public/games_ranking.html"><img src="./Images/Top+games.png"></a>   
-            <li>Birthday Invite - demonstrates the use of images, links and multipage website</li>
-            <a href="./public/birthday_invite.html"><img src="./Images/Birthday+Party.png"/> </a>
-         </ul> 
+        <h1 class="libertinus-keyboard-regular" style="text-align: center;">DevMaurie</h1>
         <hr/>
-        <a href="./public/about.html">About Me</a>
-        <a href="./public/contact.html">Contact</a>
+            <div class="Links">
+                <a href="./public/about.html">About Me</a>
+                <a href="./public/contact.html">Contact</a>
+            </div>       
+       
+        <div class="flexcontainer">
+        
+            <div class="background">
+                <p>
+                    Hi I am DevMaurie. I am a Petroleum Engineer with a huge interest in web development.
+                    I've been on a self study journey for about two months now and has been really enjoying creating stuff.
+                    My languages are English, Filipino, Python, a little bit of Japanese and HTML/CSS/JS.
+                </p>
+                <p>
+                    I first started exploring html when I was 13 when I got hooked on tumblr.
+                    I liked how I was able to customize my site, sort of like a personal blog with lots of weird backgrounds.
+                    I've always been curios about making one however life slapped me hard and threw me into engineering College **just kidding**.
+                    Please note that personal info in this page is not real and for practice purposes only. <br/>
+                    Anyways, now I am back to the tech world and I took a Udemy course for full stack web development.
+                    I am starting small but every legendary person in the world started small too. Below is my list of projects starting from the very basics to the most advance ones.
+                </p>
+            </div>
 
-    <footer>
+            <div class="portfolio-list">
+                <h3>Portfolio / Projects :</h3>      
+                    <ul>
+                        <li>Games that I like - demonstrates the basic structure of HTML</li>
+                        <a href="./public/games_ranking.html"><img src="./Images/Top+games.png"></a>   
+                        <li>Birthday Invite - demonstrates the use of images, links and multipage website</li>
+                        <a href="./public/birthday_invite.html"><img src="./Images/Birthday+Party.png"/> </a>
+                    </ul> 
+            </div>
+        
+       </div>
+
+    <footer >
      <small>
       Copyright © 2025 Sheila Caringal. All Rights Reserved.
      </small>
